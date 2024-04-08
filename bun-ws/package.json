@@ -1,0 +1,19 @@
+{
+  "name": "bunweb",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build --target=bun ./index.ts --outdir ./dist",
+    "start": "bun ./dist/index.js"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ioredis": "^5.3.2",
+    "redis": "^4.6.10"
+  }
+}
